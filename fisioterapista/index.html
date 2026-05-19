@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FisioMedica | Fisioterapia Avanzata</title>
+  <meta name="description" content="Centro di fisioterapia avanzata. Trattamenti personalizzati, tecnologie all'avanguardia e professionisti esperti per il tuo recupero.">
+  <meta property="og:title" content="FisioMedica | Fisioterapia Avanzata">
+  <meta property="og:description" content="Centro di eccellenza per la fisioterapia e la riabilitazione.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🩺</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#" class="nav-logo">
+      <span class="logo-icon"><i class="fas fa-heartbeat"></i></span>
+      <span class="logo-text">Fisio<span class="accent">Medica</span></span>
+    </a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#servizi"       class="nav-link">Servizi</a></li>
+      <li><a href="#about"         class="nav-link">Chi Siamo</a></li>
+      <li><a href="#testimonianze" class="nav-link">Testimonianze</a></li>
+      <li><a href="#faq"           class="nav-link">FAQ</a></li>
+      <li><a href="#contatti"      class="nav-link">Contatti</a></li>
+    </ul>
+    <a href="#contatti" class="btn btn-accent nav-cta">Prenota Ora</a>
+    <button class="hamburger" id="hamburger" aria-label="Apri menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <img
+      src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=1920&q=80"
+      alt="Seduta di fisioterapia professionale"
+      class="hero-img">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <i class="fas fa-award"></i>
+      <span>Centro Certificato di Eccellenza</span>
+    </div>
+    <h1 class="hero-title">
+      Il tuo corpo<br>
+      <em>merita</em> il meglio
+    </h1>
+    <p class="hero-subtitle">
+      Fisioterapia avanzata e riabilitazione personalizzata.<br>
+      Torna a muoverti — senza dolore.
+    </p>
+    <div class="hero-cta">
+      <a href="#contatti" class="btn btn-accent">
+        <i class="fas fa-calendar-check"></i>Prenota una Visita
+      </a>
+      <a href="#servizi" class="btn btn-ghost">
+        Scopri i Servizi<i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="stat-number">500+</span>
+        <span class="stat-label">Pazienti trattati</span>
+      </div>
+      <div class="hero-stat">
+        <span class="stat-number">15+</span>
+        <span class="stat-label">Anni esperienza</span>
+      </div>
+      <div class="hero-stat">
+        <span class="stat-number">98%</span>
+        <span class="stat-label">Soddisfazione</span>
+      </div>
+    </div>
+  </div>
+  <a href="#servizi" class="hero-scroll" aria-label="Scorri verso il basso">
+    <span>Scorri</span>
+    <i class="fas fa-chevron-down"></i>
+  </a>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="servizi">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-tag">Cosa Offriamo</span>
+      <h2 class="section-title">I Nostri Servizi</h2>
+      <p class="section-subtitle">Trattamenti all'avanguardia per ogni esigenza, con approccio completamente personalizzato.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card fade-in">
+        <div class="service-img">
+          <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=600&q=80"
+               alt="Fisioterapia Manuale" loading="lazy">
+          <div class="service-icon"><i class="fas fa-hands"></i></div>
+        </div>
+        <div class="service-body">
+          <h3>Fisioterapia Manuale</h3>
+          <p>Tecniche manuali avanzate per trattare dolori muscolari, articolari e disfunzioni della colonna vertebrale.</p>
+          <a href="#contatti" class="service-link">Prenota <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-img">
+          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80"
+               alt="Riabilitazione Post-Operatoria" loading="lazy">
+          <div class="service-icon"><i class="fas fa-bone"></i></div>
+        </div>
+        <div class="service-body">
+          <h3>Riabilitazione Post-Op</h3>
+          <p>Percorsi riabilitativi personalizzati per un recupero rapido e completo dopo interventi chirurgici.</p>
+          <a href="#contatti" class="service-link">Prenota <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-img">
+          <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=600&q=80"
+               alt="Fisioterapia Sportiva" loading="lazy">
+          <div class="service-icon"><i class="fas fa-running"></i></div>
+        </div>
+        <div class="service-body">
+          <h3>Fisioterapia Sportiva</h3>
+          <p>Dalla prevenzione degli infortuni al recupero prestazionale: trattamenti specifici per ogni atleta.</p>
+          <a href="#contatti" class="service-link">Prenota <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-img">
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80"
+               alt="Postura e Colonna" loading="lazy">
+          <div class="service-icon"><i class="fas fa-user-check"></i></div>
+        </div>
+        <div class="service-body">
+          <h3>Postura e Colonna</h3>
+          <p>Analisi posturale computerizzata e rieducazione motoria per correggere squilibri e prevenire dolori cronici.</p>
+          <a href="#contatti" class="service-link">Prenota <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-img">
+          <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=600&q=80"
+               alt="Tecarterapia" loading="lazy">
+          <div class="service-icon"><i class="fas fa-bolt"></i></div>
+        </div>
+        <div class="service-body">
+          <h3>Tecarterapia</h3>
+          <p>Tecnologia ad onde elettromagnetiche per accelerare la rigenerazione tissutale e ridurre il dolore in profondità.</p>
+          <a href="#contatti" class="service-link">Prenota <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-img">
+          <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80"
+               alt="Massofisioterapia" loading="lazy">
+          <div class="service-icon"><i class="fas fa-spa"></i></div>
+        </div>
+        <div class="service-body">
+          <h3>Massofisioterapia</h3>
+          <p>Massaggi terapeutici profondi per sciogliere tensioni muscolari, migliorare la circolazione e il benessere generale.</p>
+          <a href="#contatti" class="service-link">Prenota <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-image fade-in">
+        <div class="about-img-wrap">
+          <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&q=80"
+               alt="Dr. [Nome Cognome] — Fisioterapista" loading="lazy">
+          <div class="about-badge">
+            <i class="fas fa-award"></i>
+            Fisioterapista Certificato
+          </div>
+        </div>
+        <div class="about-exp">
+          <span class="exp-number">15+</span>
+          <span class="exp-text">Anni di<br>Esperienza</span>
+        </div>
+      </div>
+
+      <div class="about-content fade-in">
+        <span class="section-tag">Chi Siamo</span>
+        <h2 class="section-title">Cura e Competenza<br><em>al tuo servizio</em></h2>
+        <p class="about-lead">Siamo un centro di fisioterapia all'avanguardia, dove la tecnologia incontra l'umanità. Ogni paziente riceve un percorso completamente personalizzato.</p>
+        <p>Con un team di specialisti altamente qualificati e strumentazioni di ultima generazione, offriamo trattamenti mirati per ogni tipo di patologia, dall'acuto al cronico, con risultati misurabili fin dalle prime sedute.</p>
+        <ul class="about-features">
+          <li><i class="fas fa-check-circle"></i> Laureati in Fisioterapia con specializzazioni internazionali</li>
+          <li><i class="fas fa-check-circle"></i> Strumentazioni diagnostiche di ultima generazione</li>
+          <li><i class="fas fa-check-circle"></i> Approccio olistico e personalizzato per ogni paziente</li>
+          <li><i class="fas fa-check-circle"></i> Convenzioni con le principali assicurazioni sanitarie</li>
+          <li><i class="fas fa-check-circle"></i> Ambiente accogliente, moderno e accessibile</li>
+        </ul>
+        <a href="#contatti" class="btn btn-primary">
+          Prenota una Consulenza <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item fade-in">
+        <i class="fas fa-users stat-icon"></i>
+        <div class="stat-count">
+          <span class="counter" data-target="1200">0</span><span class="stat-suffix">+</span>
+        </div>
+        <p>Pazienti Trattati</p>
+      </div>
+      <div class="stat-item fade-in">
+        <i class="fas fa-calendar-check stat-icon"></i>
+        <div class="stat-count">
+          <span class="counter" data-target="15">0</span><span class="stat-suffix">+</span>
+        </div>
+        <p>Anni di Esperienza</p>
+      </div>
+      <div class="stat-item fade-in">
+        <i class="fas fa-medal stat-icon"></i>
+        <div class="stat-count">
+          <span class="counter" data-target="30">0</span><span class="stat-suffix">+</span>
+        </div>
+        <p>Tecniche Specializzate</p>
+      </div>
+      <div class="stat-item fade-in">
+        <i class="fas fa-star stat-icon"></i>
+        <div class="stat-count">
+          <span class="counter" data-target="98">0</span><span class="stat-suffix">%</span>
+        </div>
+        <p>Soddisfazione Pazienti</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonianze">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-tag">Testimonianze</span>
+      <h2 class="section-title">Cosa Dicono i Pazienti</h2>
+      <p class="section-subtitle">La soddisfazione dei nostri pazienti è la nostra più grande ricompensa.</p>
+    </div>
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card fade-in">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p>"Dopo anni di dolori alla schiena ho finalmente trovato sollievo. Il team è straordinariamente professionale e attento. Altamente raccomandato a chiunque!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">MR</div>
+          <div class="author-info">
+            <strong>Marco Rossi</strong>
+            <span>Dirigente, 45 anni</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card featured fade-in">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p>"Dopo l'operazione al ginocchio pensavo non avrei mai più corso. Grazie alla riabilitazione personalizzata sono tornata in pista in tempi record. Grazie infinite!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">LC</div>
+          <div class="author-info">
+            <strong>Laura Conti</strong>
+            <span>Atleta amatoriale, 32 anni</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-in">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p>"Ambiente modernissimo e personale qualificato. Ho seguito il percorso per la cervicale e i risultati sono stati eccezionali fin dalla prima seduta."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">GV</div>
+          <div class="author-info">
+            <strong>Giuseppe Verdi</strong>
+            <span>Insegnante, 58 anni</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-grid">
+
+      <div class="faq-header fade-in">
+        <span class="section-tag">FAQ</span>
+        <h2 class="section-title">Hai delle<br><em>domande?</em></h2>
+        <p>Siamo qui per rispondere a tutti i tuoi dubbi. Se non trovi la risposta che cerchi, non esitare a contattarci direttamente.</p>
+        <a href="#contatti" class="btn btn-primary">Contattaci <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="faq-list">
+
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            <span>Quanto dura una seduta di fisioterapia?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>La durata varia in base al trattamento. Una seduta standard dura dai 45 ai 60 minuti. Per la Tecarterapia può essere più breve (30 min), mentre per sedute di riabilitazione complessa può arrivare a 90 minuti.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            <span>Ho bisogno di una prescrizione medica?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Per le prestazioni in convenzione SSN è necessaria la prescrizione del medico di base o specialista. Per le prestazioni private non è obbligatoria, ma è consigliata per un percorso di cura ottimale.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            <span>Accettate convenzioni con assicurazioni sanitarie?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Sì, lavoriamo con le principali assicurazioni e fondi integrativi (Unisalute, Previmedical, Generali, MetaSalute e altri). Contattaci per verificare la tua copertura specifica.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            <span>Come si svolge la prima visita?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>La prima visita include un'anamnesi approfondita, valutazione posturale e funzionale, test specifici per la tua problematica e la definizione di un piano terapeutico personalizzato. Dura circa 60–75 minuti.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            <span>Quante sedute sono necessarie?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Il numero dipende dalla patologia e dalla risposta individuale al trattamento. In media si lavora su cicli da 8–12 sedute, ma il piano viene sempre rivisto in base ai progressi del paziente.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contatti">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-tag">Contatti</span>
+      <h2 class="section-title">Prenota la Tua Visita</h2>
+      <p class="section-subtitle">Compila il modulo o contattaci direttamente. Ti risponderemo entro 24 ore.</p>
+    </div>
+    <div class="contact-grid">
+
+      <div class="contact-info fade-in">
+        <div class="contact-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <div><h4>Indirizzo</h4><p>Via [Indirizzo], [Città]<br>CAP [XXXXX]</p></div>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-phone"></i>
+          <div><h4>Telefono</h4><p><a href="tel:+390000000000">+39 000 000 0000</a></p></div>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <div><h4>Email</h4><p><a href="mailto:info@fisiomedica.it">info@fisiomedica.it</a></p></div>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-clock"></i>
+          <div><h4>Orari</h4><p>Lun–Ven: 8:00–20:00<br>Sab: 9:00–14:00</p></div>
+        </div>
+        <div class="contact-map">
+          <!-- Sostituisci con le coordinate del tuo studio -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89484.73!2d9.1012!3d45.4642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1493f1275e7%3A0x3cffcd13c6740e8d!2sMilano%20MI!5e0!3m2!1sit!2sit!4v1600000000000"
+            loading="lazy" title="Mappa dello studio" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <form class="contact-form fade-in" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nome">Nome *</label>
+            <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required>
+          </div>
+          <div class="form-group">
+            <label for="cognome">Cognome *</label>
+            <input type="text" id="cognome" name="cognome" placeholder="Il tuo cognome" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="tua@email.it" required>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+39 000 000 0000">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="servizio">Servizio di Interesse</label>
+          <select id="servizio" name="servizio">
+            <option value="">Seleziona un servizio…</option>
+            <option value="manuale">Fisioterapia Manuale</option>
+            <option value="postop">Riabilitazione Post-Operatoria</option>
+            <option value="sportiva">Fisioterapia Sportiva</option>
+            <option value="postura">Postura e Colonna</option>
+            <option value="tecar">Tecarterapia</option>
+            <option value="massaggio">Massofisioterapia</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="messaggio">Messaggio</label>
+          <textarea id="messaggio" name="messaggio" rows="4" placeholder="Descrivi brevemente il tuo problema o la tua richiesta…"></textarea>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="privacy" name="privacy" required>
+          <label for="privacy">Ho letto e accetto la <a href="#">Privacy Policy</a> *</label>
+        </div>
+        <button type="submit" class="btn btn-accent btn-full">
+          <i class="fas fa-paper-plane"></i>Invia Richiesta
+        </button>
+        <div class="form-success" id="formSuccess">
+          <i class="fas fa-check-circle"></i>
+          <span>Richiesta inviata! Ti contatteremo al più presto.</span>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <a href="#" class="nav-logo footer-logo">
+          <span class="logo-icon"><i class="fas fa-heartbeat"></i></span>
+          <span class="logo-text">Fisio<span class="accent">Medica</span></span>
+        </a>
+        <p>Centro di eccellenza per la fisioterapia e la riabilitazione. Il tuo benessere è la nostra missione.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Servizi</h4>
+        <ul>
+          <li><a href="#servizi">Fisioterapia Manuale</a></li>
+          <li><a href="#servizi">Riabilitazione Post-Op</a></li>
+          <li><a href="#servizi">Fisioterapia Sportiva</a></li>
+          <li><a href="#servizi">Postura e Colonna</a></li>
+          <li><a href="#servizi">Tecarterapia</a></li>
+          <li><a href="#servizi">Massofisioterapia</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="#about">Chi Siamo</a></li>
+          <li><a href="#testimonianze">Testimonianze</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contatti">Prenota</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contatti</h4>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Via [Indirizzo], [Città]</li>
+          <li><i class="fas fa-phone"></i> <a href="tel:+390000000000">+39 000 000 0000</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:info@fisiomedica.it">info@fisiomedica.it</a></li>
+          <li><i class="fas fa-clock"></i> Lun–Ven 8:00–20:00</li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 FisioMedica. Tutti i diritti riservati. P.IVA [XXXXXXXXXXX]</p>
+      <p>Realizzato con <i class="fas fa-heart"></i></p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING ELEMENTS -->
+<a href="https://wa.me/390000000000" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Scrivici su WhatsApp">
+  <i class="fab fa-whatsapp"></i><span>Scrivici!</span>
+</a>
+
+<button class="back-to-top" id="backToTop" aria-label="Torna in cima">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
