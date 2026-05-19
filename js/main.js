@@ -83,20 +83,38 @@ document.querySelectorAll('.faq-item').forEach(item => {
   });
 });
 
-/* ── Contact form (demo submit) ── */
-document.getElementById('contactForm').addEventListener('submit', e => {
+/* ── Contact form — Formspree ── */
+document.getElementById('contactForm').addEventListener('submit', async e => {
   e.preventDefault();
-  const btn     = e.target.querySelector('button[type="submit"]');
+  const form    = e.target;
+  const btn     = form.querySelector('button[type="submit"]');
   const success = document.getElementById('formSuccess');
+
   btn.disabled  = true;
   btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Invio in corso…';
-  setTimeout(() => {
-    success.style.display = 'flex';
-    e.target.reset();
+
+  try {
+    const res = await fetch(form.action, {
+      method:  'POST',
+      body:    new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (res.ok) {
+      success.style.display = 'flex';
+      form.reset();
+      success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    } else {
+      const data = await res.json();
+      const msg  = data?.errors?.map(err => err.message).join(', ') || 'Errore di invio';
+      alert('Errore: ' + msg);
+    }
+  } catch {
+    alert('Connessione fallita. Riprova o contattaci direttamente per telefono.');
+  } finally {
     btn.disabled  = false;
     btn.innerHTML = '<i class="fas fa-paper-plane"></i>Invia Richiesta';
-    success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-  }, 1400);
+  }
 });
 
 /* ── Back to top ── */
